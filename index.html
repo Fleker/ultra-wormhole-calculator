@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Ultra Wormholes Calculator</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                padding-top: 16px;
+                background-color: #333;
+                color: #ccc;
+                font-family: sans-serif;
+                font-size: small;
+            }
+
+            label > img {
+                width: 148px;
+            }
+
+            h3, em {
+                padding-left: 16px;
+            }
+
+            input {
+                margin-left: 16px;
+                background-color: #555;
+                color: #ccc;
+            }
+
+            input[type="number"] {
+                padding-left: 4px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+
+            a {
+                color: #09f;
+            }
+
+            #white, label[for="white"] {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Light Years</h3>
+        <input type="number" placeholder="Light years" id="lightYears" min="1" max="9999" value="1" />
+
+        <h3>Wormhole Color</h3>
+        <input type="radio" id="white" name="color" value="white">
+        <label for="white">White</label>
+
+        <input type="radio" id="blue" name="color" value="blue" checked>
+        <label for="blue">Blue</label>
+
+        <input type="radio" id="green" name="color" value="green">
+        <label for="green">Green</label>
+
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">Red</label>
+
+        <input type="radio" id="yellow" name="color" value="yellow">
+        <label for="yellow">Yellow</label>
+
+        <h3>Wormhole Type</h3>
+        <input type="radio" id="type1" name="wormholeType" value="type1" checked>
+        <label for="type1">Type 1 <img src="https://www.serebii.net/ultrasunultramoon/62.jpg"/></label>
+
+        <input type="radio" id="type2" name="wormholeType" value="type2">
+        <label for="type2">Type 2 <img src="https://www.serebii.net/ultrasunultramoon/wormhole2.jpg"/></label>
+
+        <input type="radio" id="type3" name="wormholeType" value="type3">
+        <label for="type3">Type 3 <img src="https://www.serebii.net/ultrasunultramoon/wormhole3.jpg"/></label>
+
+        <input type="radio" id="type4" name="wormholeType" value="type4">
+        <label for="type4">Type 4 <img src="https://www.serebii.net/ultrasunultramoon/wormhole4.jpg"/></label>
+
+        <hr>
+        <h3>Shiny Odds <span id="odds">0%</span></h3>
+        <ul id="encounters"></ul>
+
+        <br><br>
+        <em>Data based on <a href="https://www.serebii.net/ultrasunultramoon/ultrawormholes.shtml" target="_blank">Serebii</a></em>
+
+        <script src="main.js"></script>
+    </body>
+</html>
